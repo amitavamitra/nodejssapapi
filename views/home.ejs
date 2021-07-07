@@ -1,0 +1,17 @@
+<h1>Read Product from S4 Cloud</h1>
+<form action="/" method="post">
+<input type="text"   name="product">
+<button type="submit">Get</button>
+<br>
+<table>
+    <tr>
+       <th>Key</th><th>Value</th></th>
+    </tr>
+     <% for (var i = 0; i < prodArr.length;  i++) { %>
+     <tr>
+       <td><%= prodArr[i].key %></td>
+       <td><%= prodArr[i].value %></td>
+          </tr>    
+    <% } %>
+ </table>
+</form>
